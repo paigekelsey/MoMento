@@ -1,6 +1,10 @@
-body {
-    background-color: rgb(255, 253, 254);
-    background-attachment: fixed;
-    background-size: cover;
-    background-image: url("https://flevix.com/wp-content/uploads/2020/01/Web-Header-Background-1.svg");
+ body {
+
+background-image: url("/images/particle.mp4"); 
 }
+/* <a href='https://www.freepik.com/vectors/background'>Background vector created by freepik - www.freepik.com</a> */
+/* #video{
+    position :fixed;
+    z-index: -1;
+    width:100%
+} */
