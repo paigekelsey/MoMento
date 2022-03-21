@@ -1,25 +1,14 @@
 import React from 'react';
-import { Container, AppBar, Grow, Grid } from '@material-ui/core';
+import { Container, Grow, Grid } from '@material-ui/core';
 import useStyles from './styles';
-import memories from './images/moMento.png';
-// import backgroundVideo from './images/particle.mp4'
-
+import memories from './images/mom.png';
 const App = () => {
     const classes = useStyles();
 
     return (
-        <div>
-                <video loop autoPlay>
-        <source
-          src="/images/particle.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
         <Container maxWidth="lg">
-          <AppBar className={classes.appBar} position="static" color="inherit">
-            <img className={classes.image} src={memories} alt="icon" height="300" />
-          </AppBar>
+            <img className={classes.image} src={memories} alt="icon" height="300" position='static' />
+       
           <Grow in>
             <Container>
               <Grid container justify="space-between" alignItems="stretch" spacing={3}>
@@ -35,8 +24,9 @@ const App = () => {
           {/* <video autoPlay loop muted id='video'>
               <source src = {backgroundVideo} type = 'video/mp4'/>
           </video> */}
+
         </Container>
-        </div>
+ 
       );
     };
     
